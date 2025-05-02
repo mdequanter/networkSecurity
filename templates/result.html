@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Granted</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .box {
+            background-color: white;
+            padding: 40px;
+            margin: auto;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        a.download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        a.download-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Thank you for logging in!</h2>
+        <p>Your 24-hour Wi-Fi access is now active.</p>
+        <p>You can download your course materials below:</p>
+        <a href="{{ url_for('static', filename='NetworkSecurity2025.pdf') }}" 
+           class="download-link" 
+           download>📥 Download Course</a>
+    </div>
+</body>
+</html>

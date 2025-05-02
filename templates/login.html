@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Wi-Fi Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin-top: 80px;
+        }
+        .container {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 95%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .warning {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Get 24h Free Wi-Fi Access to course resources</h2>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="VUB Logo" width="100"><br><br>
+        <form method="POST">
+            <input type="text" name="forename" placeholder="First Name" required><br>
+            <input type="text" name="name" placeholder="Last Name" required><br>
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <input type="password" name="password" placeholder="Preferred password to login later" required><br>
+            <input type="submit" value="Connect">
+        </form>
+    </div>
+</body>
+</html>
