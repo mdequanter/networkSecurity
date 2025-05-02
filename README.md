@@ -29,8 +29,6 @@ This project is a **Flask-based fake Wi-Fi login portal** designed purely for **
   - Name, forename, email, password
   - Obfuscated password (30% replaced with `*`)
   - IP address
-  - User-Agent (browser & OS info)
-  - Screen resolution, timezone, browser language (via JavaScript)
 - Saves all data to `logins.csv`
 - Displays a thank-you page with a fake course download link
 
